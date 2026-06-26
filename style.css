@@ -1,0 +1,67 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 { text-align: center; margin-bottom: 30px; }
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+form { display: grid; gap: 12px; }
+
+input, textarea, select {
+  padding: 13px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+
+textarea { min-height: 90px; }
+
+button {
+  padding: 13px 18px;
+  font-size: 16px;
+  border: none;
+  background: #222222;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover { background: #444444; }
+
+.cancel-btn { background: #b00020; margin-top: 10px; }
+.cancel-btn:hover { background: #d00028; }
+
+#message {
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.item {
+  border: 1px solid #dddddd;
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.item h3 { margin-top: 0; }
+.small { color: #666666; font-size: 14px; }

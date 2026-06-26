@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Registration System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Event Registration System</h1>
+
+    <section class="card">
+      <h2>Create Event</h2>
+      <form id="eventForm">
+        <input type="text" id="title" placeholder="Event title" required />
+        <textarea id="description" placeholder="Event description" required></textarea>
+        <input type="date" id="eventDate" required />
+        <input type="text" id="location" placeholder="Location" required />
+        <input type="number" id="seats" placeholder="Total seats" min="1" required />
+        <button type="submit">Create Event</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Register for Event</h2>
+      <form id="registrationForm">
+        <input type="text" id="userName" placeholder="Your name" required />
+        <input type="email" id="userEmail" placeholder="Your email" required />
+        <select id="eventSelect" required>
+          <option value="">Select event</option>
+        </select>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+
+    <p id="message"></p>
+
+    <section class="card">
+      <h2>Event List</h2>
+      <div id="eventList"></div>
+    </section>
+
+    <section class="card">
+      <h2>Registrations</h2>
+      <div id="registrationList"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
